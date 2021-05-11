@@ -6,7 +6,7 @@ const Header: React.FC = () => {
 
     return (
       <header>
-        <img className="logo-header" src="/images/logo.png" alt="" />
+        <img className="logo-header" src="/images/PEN_383.png" alt="" />
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             </li>
             
             <li>
-              <a className="smoothscroll" href="/">
+              <a className="smoothscroll" rel="noreferrer" target="_blank" href="https://quickswap.exchange/#/swap?outputCurrency=">
                 Exchange
               </a>
             </li>
@@ -39,13 +39,13 @@ const Header: React.FC = () => {
             </li>
             <li>
               <img src="/images/soon.png" alt="" className="soon" />
-              <a className="smoothscroll" href="/">
+              <a className="smoothscroll disabled-button" href="/">
                   Lottery
               </a>
             </li>
             <li>
               <img src="/images/soon.png" alt="" className="soon" />
-              <a className="smoothscroll" href="/">
+              <a className="smoothscroll disabled-button" href="/">
                   Predictions
               </a>
             </li>

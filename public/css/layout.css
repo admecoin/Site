@@ -1253,7 +1253,7 @@ footer .social-links li:first-child { margin-left: 0; }
     color: #2233ff !important;
 }
 .logo-header{
-   width: 100px;
+   width: 80px;
    left: 15px;
    top: 15px;
    position: absolute;
@@ -1302,4 +1302,6 @@ footer .social-links li:first-child { margin-left: 0; }
    
    right: 0px;
  }
- 
+ .disabled-button{
+    cursor: default;
+ }

@@ -45,6 +45,9 @@ jQuery(document).ready(function($) {
 
       }
     });
+    $(document).on('click', '.disabled-button', function(){
+        return false;
+    })
 
   }, time);
   

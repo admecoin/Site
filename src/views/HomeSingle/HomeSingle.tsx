@@ -137,7 +137,7 @@ const HomeSingle: React.FC = () => {
             <div>
                 Buy a lottery card and win PEN
                 <br />
-                <a className="btn" href="/">Launch</a>
+                <a className="btn disabled-button" href="/">Launch</a>
             </div>
         </div>
         <div className="service">
@@ -147,7 +147,7 @@ const HomeSingle: React.FC = () => {
             <div>
                 Predict whether the price of different assets will rise or fall.
                 <br />
-                <a className="btn" href="/">Launch</a>
+                <a className="btn disabled-button" href="/">Launch</a>
             </div>
         </div>
       </div>
