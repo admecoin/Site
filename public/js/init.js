@@ -6,14 +6,19 @@ jQuery(document).ready(function($) {
     var sections = $("section");
     var navigation_links = $("#nav-wrap a");
     /*$(".smoothscroll").on("click", function(e) {
-      e.preventDefault();
       var active_link = $(this);
 
       navigation_links.parent().removeClass("current");
       active_link.parent().addClass("current");
-      
+      return true;
     });*/
-   
+   $(document).ready(function(){
+     var page = window.location.href.split('/')[window.location.href.split('/').length -1];
+     $('ul.nav li').removeClass('current');
+     if(page == '')
+      $($('#home').parent()).addClass('current');
+     $($('#' + page).parent()).addClass('current');
+   })
 
     $(window).on("scroll", function() {
       var h = $("header").height();

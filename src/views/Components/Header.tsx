@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
           <ul id="nav" className="nav">
             <li className="current">
-              <a className="smoothscroll" href="/">
+              <a id="home" className="smoothscroll" href="/">
                 Home
               </a>
             </li>
@@ -28,12 +28,12 @@ const Header: React.FC = () => {
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="/farms">
+              <a id="farms" className="smoothscroll" href="/farms">
                   Farms
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="/nests">
+              <a id="nests" className="smoothscroll" href="/nests">
                   Pools
               </a>
             </li>
