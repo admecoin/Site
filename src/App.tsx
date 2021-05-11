@@ -45,6 +45,7 @@ const App: React.FC = () => {
         <Header />
       </div>
       <Router>
+        <Menu />
         <ResetCSS />
         <GlobalStyle />
       
@@ -56,7 +57,7 @@ const App: React.FC = () => {
               <Route path="/farms" exact>
                 <Farms />
               </Route>
-              <Route path="/nests" exact>
+              <Route path="/pools" exact>
                 <Farms tokenMode/>
               </Route>
               <Route path="/vision" exact>

@@ -1,12 +1,21 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useWallet } from '@binance-chain/bsc-use-wallet'
 import useI18n from 'hooks/useI18n'
+import Menu from '../../components/Menu'
 
 const Header: React.FC = () => {
     const TranslateString = useI18n()
-
+    const { account, connect } = useWallet()
+    useEffect(() => {
+      if (!account && window.localStorage.getItem('accountStatus')) {
+        connect('injected')
+      }
+    }, [account, connect])
+    
     return (
       <header>
         <img className="logo-header" src="/images/PEN_383.png" alt="" />
+        <div className="title-logo">PolyEarn</div>
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
@@ -33,7 +42,7 @@ const Header: React.FC = () => {
               </a>
             </li>
             <li>
-              <a id="nests" className="smoothscroll" href="/nests">
+              <a id="pools" className="smoothscroll" href="/pools">
                   Pools
               </a>
             </li>

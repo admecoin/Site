@@ -36,6 +36,7 @@ header {
    
    text-align: center;
    overflow: hidden;
+   display:flex !important;
 }
 
 /* vertically center banner section */
@@ -135,7 +136,7 @@ header .scrolldown a:hover { color: #0762f9; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: rgb(0,0,0,0.9);
+.opaque { background-color: rgba(209, 135, 135, 0.9);
    border-bottom: 1px solid #2233ff; }
 
 /* hide toggle button */
@@ -143,10 +144,10 @@ header .scrolldown a:hover { color: #0762f9; }
 
 ul#nav {
    min-height: 48px;
-   width: auto;
-
-   /* center align the menu */
-   text-align: center;
+    width: auto;
+    text-align: right;
+    margin-right: 120px;
+    margin-top: 7px;
 }
 ul#nav li {
    position: relative;
@@ -1253,10 +1254,16 @@ footer .social-links li:first-child { margin-left: 0; }
     color: #2233ff !important;
 }
 .logo-header{
-   width: 80px;
+   width: 50px;
    left: 15px;
    top: 15px;
    position: absolute;
+}
+.title-logo{
+   color: #fff;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 .comming{
    width: 100px;

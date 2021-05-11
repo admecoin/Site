@@ -112,7 +112,7 @@
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #CC5200;
+		background-color: #E0c66d;
 		position: relative;
       border: none;
       float: right;
@@ -138,15 +138,15 @@
    #nav-wrap > a:after { top: 60%; }
 
    /* toggle buttons */
-	/* #nav-wrap:not( :target ) > a:first-of-type,
+	 #nav-wrap:not( :target ) > a:first-of-type,
 	#nav-wrap:target > a:last-of-type  {
 	   display: block;
-	} */
+	} 
 
    /* hide menu panel */
    #nav-wrap ul#nav {
       height: auto;
-		/*display: none;*/
+		display: none;
       clear: both;
       width: auto; 
       float: right;     
@@ -166,7 +166,7 @@
    }
 
    ul#nav li {
-      /* display: block; */
+      display: block;
       height: auto;      
       margin: 0 auto; 
       padding: 0 2%;           
@@ -373,19 +373,24 @@
    .footer .section1{
       display: inline-grid;
    }
-   header{
+   /*header{
       height: 300px;
    }
    header .logo-header{
       width: 100px;
     left: 37%;
     top: 40%;
-   }
+   }*/
    .homesingle{
       margin-top: -150px;
    }
    .service{
       width: 70%;
+   }
+   
+   .jivjtN{
+      right: 73px !important;
+   }
 }
 
 

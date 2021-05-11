@@ -115,7 +115,7 @@ const HomeSingle: React.FC = () => {
             <div>
                 Safely earn free, passive income from your idle assets.
                 <br />
-                <a className="btn" href="/nests">Launch</a>
+                <a className="btn" href="/pools">Launch</a>
             </div>
         </div>
         <div className="service">
