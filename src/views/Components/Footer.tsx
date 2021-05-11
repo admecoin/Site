@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                         </ul>
                     </div>
                     <div className="column2">
-                        <strong>PolyDeFi Finance</strong>
+                        <strong>PolyEarn Finance</strong>
                         <ul className="jss37752">
                             <li className="jss37753"><a href="/vision">Vision & Mission</a></li>
                             <li className="jss37753"><a href="/docs">Documentation</a></li>

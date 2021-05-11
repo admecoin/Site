@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Heading, Text, BaseLayout } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 import Page from 'components/layout/Page'
 import CardTVL from '../Components/CardTVL'
 import CardPrice from '../Components/CardPrice'
@@ -9,6 +10,8 @@ import BalanceHome from '../Components/BalanceHome'
 import MarketCap from '../Components/MarketCap'
 import TotalBurned from '../Components/TotalBurned'
 import TotalMinted from '../Components/TotalMinted'
+
+
 
 const Hero = styled.div`
   align-items: center;
@@ -73,8 +76,18 @@ const CTACards = styled(BaseLayout)`
 const HomeSingle: React.FC = () => {
   const TranslateString = useI18n()
 
-  return (
-    <div>
+  return ( 
+    <div className="homesingle">
+      <div id="twitter-ann" className="ann-hide">
+        <img className="twitter-icon" src="/images/tw.png" alt="Announcements" width="50px" height="50px" />
+        <div>
+                <TwitterTimelineEmbed
+                            sourceType="profile"
+                            screenName="PolyEarn"
+                            options={{height: 640}}
+                            />
+            </div>
+      </div>
       <video id="videoBG" poster="" autoPlay muted loop>
         <source src="/images/back3.mp4" type="video/mp4"/>
       </video>

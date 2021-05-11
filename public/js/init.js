@@ -30,6 +30,22 @@ jQuery(document).ready(function($) {
         }
       }
     });
+    $(document).on('click', '.twitter-icon', function(){
+      var c = $('#twitter-ann').attr('class');
+      if(c == 'ann-hide')
+      {
+        $('#twitter-ann').removeClass('ann-hide');
+        $('#twitter-ann').addClass('ann-show');
+
+      }
+      else
+      {
+        $('#twitter-ann').addClass('ann-hide');
+        $('#twitter-ann').removeClass('ann-show');
+
+      }
+    });
 
   }, time);
+  
 });
