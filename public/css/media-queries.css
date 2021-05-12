@@ -101,16 +101,17 @@
    -------------------------------------------------------------------- */
    #nav-wrap {
       font: 12px 'opensans-bold', sans-serif;
-      background: transparent !important;
+      background: rgb(0,0,0,1) !important;
       letter-spacing: 1.5px;  
       width: auto;
       position: fixed;
       top: 0;
       right: 0;
+      height: 64px;
    }
    #nav-wrap > a {
-	   width: 48px;
-		height: 48px;
+	   width: 42px;
+		height: 33px;
 		text-align: left;
 		background-color: #E0c66d;
 		position: relative;
@@ -122,8 +123,8 @@
       color: transparent;
 
       position: relative;
-      top: 0px;
-      right: 30px;
+      top: 22px;
+      right: 0px;
    }
 
 	#nav-wrap > a:before,
@@ -373,6 +374,9 @@
    .footer .section1{
       display: inline-grid;
    }
+   .footer .section1 div{
+      text-align: center;
+   }
    /*header{
       height: 300px;
    }
@@ -389,7 +393,8 @@
    }
    
    .jivjtN{
-      right: 73px !important;
+      right: 40px !important;
+      top: -53px !important;
    }
 }
 

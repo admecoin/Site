@@ -136,7 +136,7 @@ header .scrolldown a:hover { color: #0762f9; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: rgba(209, 135, 135, 0.9);
+.opaque { background-color: rgba(0, 0, 0,0.9);
    border-bottom: 1px solid #2233ff; }
 
 /* hide toggle button */
@@ -146,7 +146,7 @@ ul#nav {
    min-height: 48px;
     width: auto;
     text-align: right;
-    margin-right: 120px;
+    margin-right: 140px;
     margin-top: 7px;
 }
 ul#nav li {
@@ -1257,13 +1257,16 @@ footer .social-links li:first-child { margin-left: 0; }
    width: 50px;
    left: 15px;
    top: 15px;
-   position: absolute;
+   position: fixed;
+   z-index: 9999;
 }
 .title-logo{
    color: #fff;
     margin-left: 80px;
     margin-top: 30px;
     font-size: 20px;
+    position: fixed;
+    z-index: 9999;
 }
 .comming{
    width: 100px;
@@ -1311,4 +1314,8 @@ footer .social-links li:first-child { margin-left: 0; }
  }
  .disabled-button{
     cursor: default;
+ }
+ .geMpxR{
+   position: fixed !important;
+   z-index: 999 !important;
  }

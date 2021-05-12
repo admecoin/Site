@@ -30,8 +30,14 @@ jQuery(document).ready(function($) {
       } else {
         if (y < h * 0.2) {
           nav.removeClass("opaque").fadeIn("fast");
+          $(".logo-header").css('width', '50px');
+          $(".title-logo").css('margin-left','80px');
+          $(".title-logo").css('margin-top','30px');
         } else {
           nav.addClass("opaque").fadeIn("fast");
+          $(".logo-header").css('width', '37px');
+          $(".title-logo").css('margin-left','64px');
+          $(".title-logo").css('margin-top','24px');
         }
       }
     });
