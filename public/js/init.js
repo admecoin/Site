@@ -1,5 +1,52 @@
 jQuery(document).ready(function($) {
   var time = 380;
+  setInterval(function(){
+    $.get('https://api.nomics.com/v1/currencies/ticker?key=0aeb528d3cff391cb06407949a6ad938f080272f&ids=BTC,ETH,MATIC&interval=1d,30d&convert=USD&per-page=100&page=1', function(data) {
+      
+      var oldValuePolygon = parseFloat($('#pricePolygon').html());
+      var newValuePolygon = parseFloat(data[2].price);
+      var oldValueBitcoin = parseFloat($('#priceBitcoin').html());
+      var newValueBitcoin= parseFloat(data[0].price);
+      var oldValueEther = parseFloat($('#priceEther').html());
+      var newValueEther = parseFloat(data[1].price);
+      if(newValuePolygon != oldValuePolygon){
+        if(newValuePolygon > oldValuePolygon )
+        {
+          $('#pricePolygon').css('color','green');
+        }
+        else
+        {
+          $('#pricePolygon').css('color','red');        
+        }
+        $('#pricePolygon').empty();
+        $('#pricePolygon').append(parseFloat(data[2].price).toFixed(2));
+      }
+      if(newValueBitcoin != oldValueBitcoin){
+        if(newValueBitcoin > oldValueBitcoin )
+        {
+          $('#priceBitcoin').css('color','green');
+        }
+        else
+        {
+          $('#priceBitcoin').css('color','red');        
+        }
+        $('#priceBitcoin').empty();
+        $('#priceBitcoin').append(parseFloat(data[0].price).toFixed(2));
+      }
+      if(newValueEther != oldValueEther){
+        if(newValueEther > oldValueEther )
+        {
+          $('#priceEther').css('color','green');
+        }
+        else
+        {
+          $('#priceEther').css('color','red');        
+        }
+        $('#priceEther').empty();
+        $('#priceEther').append(parseFloat(data[1].price).toFixed(2));
+      }
+    });
+  }, 2000);
   setTimeout(function() {
     // $("h1.responsive-headline").fitText(1, { minFontSize: "40px", maxFontSize: "90px" });
     

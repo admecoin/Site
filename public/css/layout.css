@@ -1160,6 +1160,26 @@ footer .social-links li:first-child { margin-left: 0; }
    margin: 10px 30px;
    border: 1px solid;
 }
+.card2{
+   width: 250px;
+   height: 100px;
+   background: rgba(0,0,0,0.6);
+   background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(48,53,110,1) 43%, rgba(112,124,255,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.6)), color-stop(43%, rgba(48,53,110,1)), color-stop(100%, rgba(112,124,255,1)));
+   background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(48,53,110,1) 43%, rgba(112,124,255,1) 100%);
+   background: -o-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(48,53,110,1) 43%, rgba(112,124,255,1) 100%);
+   background: -ms-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(48,53,110,1) 43%, rgba(112,124,255,1) 100%);
+   background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(48,53,110,1) 43%, rgba(112,124,255,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#707cff', GradientType=0 );
+    padding: 10px 0px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 30px;
+    border: 1px solid;
+    -webkit-box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
+-moz-box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
+box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
+}
 .card .title{
    color: #fff;
    font-size: 20px;
@@ -1303,7 +1323,7 @@ footer .social-links li:first-child { margin-left: 0; }
    transition: all 0.3s;
    
    transform: translateX(0px);
-   right: -307px;
+   right: 0px;
  }
  .ann-show {
    transition: all 0.3s;
@@ -1318,4 +1338,7 @@ footer .social-links li:first-child { margin-left: 0; }
  .geMpxR{
    position: fixed !important;
    z-index: 999 !important;
+ }
+ .card img{
+   width: 40px;
  }

@@ -10,6 +10,7 @@ import BalanceHome from '../Components/BalanceHome'
 import MarketCap from '../Components/MarketCap'
 import TotalBurned from '../Components/TotalBurned'
 import TotalMinted from '../Components/TotalMinted'
+import Prices from '../Components/Prices'
 
 
 
@@ -100,6 +101,8 @@ const HomeSingle: React.FC = () => {
         </Hero>
       </Page>
       <div className="info">
+        <Prices />
+        
         <CardTVL />
         <CardPrice />
         <BalanceHome />
