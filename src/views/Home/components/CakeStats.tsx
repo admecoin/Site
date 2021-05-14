@@ -5,11 +5,11 @@ import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { getPenAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceCakeBusd } from '../../../state/hooks'
+import { useFarms, usePricePenBusd } from '../../../state/hooks'
 
-const StyledCakeStats = styled(Card)`
+const StyledPenStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
 `
@@ -22,15 +22,15 @@ const Row = styled.div`
   margin-bottom: 8px;
 `
 
-const CakeStats = () => {
+const PenStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
-  const burnedBalance = useBurnedBalance(getCakeAddress())
+  const burnedBalance = useBurnedBalance(getPenAddress())
   const farms = useFarms();
-  const eggPrice = usePriceCakeBusd();
+  const penPrice = usePricePenBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
-  const cakeSupply = getBalanceNumber(circSupply);
-  const marketCap = eggPrice.times(circSupply);
+  const penSupply = getBalanceNumber(circSupply);
+  const marketCap = penPrice.times(circSupply);
 
   let eggPerBlock = 0;
   if(farms && farms[0] && farms[0].eggPerBlock){
@@ -38,7 +38,7 @@ const CakeStats = () => {
   }
 
   return (
-    <StyledCakeStats>
+    <StyledPenStats>
       <CardBody>
         <Heading size="xl" mb="24px">
           {TranslateString(534, 'PEN Stats')}
@@ -57,15 +57,15 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(10004, 'Circulating Supply')}</Text>
-          {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
+          {penSupply && <CardValue fontSize="14px" value={penSupply} decimals={0} />}
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New PEN/block')}</Text>
           <Text bold fontSize="14px">{eggPerBlock}</Text>
         </Row>
       </CardBody>
-    </StyledCakeStats>
+    </StyledPenStats>
   )
 }
 
-export default CakeStats
+export default PenStats

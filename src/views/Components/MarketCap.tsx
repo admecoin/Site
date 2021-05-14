@@ -4,18 +4,18 @@ import BigNumber from 'bignumber.js/bignumber'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { getPenAddress } from 'utils/addressHelpers'
 import CardValue from '../Home/components/CardValue'
-import { useFarms, usePriceCakeBusd } from '../../state/hooks'
+import { useFarms, usePricePenBusd } from '../../state/hooks'
 
 const MarketCap: React.FC = () => {
     const TranslateString = useI18n()
     const totalSupply = useTotalSupply()
-    const burnedBalance = useBurnedBalance(getCakeAddress())
-    const eggPrice = usePriceCakeBusd();
+    const burnedBalance = useBurnedBalance(getPenAddress())
+    const penPrice = usePricePenBusd();
     const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
-    const cakeSupply = getBalanceNumber(circSupply);
-    const marketCap = eggPrice.times(circSupply);
+    const penSupply = getBalanceNumber(circSupply);
+    const marketCap = penPrice.times(circSupply);
   
     return (
         <div className="card">

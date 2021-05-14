@@ -2,14 +2,14 @@ import React from 'react'
 import useI18n from 'hooks/useI18n'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { getPenAddress } from 'utils/addressHelpers'
 import { useTotalValue } from '../../state/hooks'
 import CardValue from '../Home/components/CardValue'
 
 const TotalBurned: React.FC = () => {
     const TranslateString = useI18n()
     const totalValue = useTotalValue();
-    const burnedBalance = useBurnedBalance(getCakeAddress())
+    const burnedBalance = useBurnedBalance(getPenAddress())
   
     return (
         <div className="card">

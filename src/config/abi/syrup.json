@@ -2,8 +2,8 @@
   {
     "inputs": [
       {
-        "internalType": "contract CakeToken",
-        "name": "_cake",
+        "internalType": "contract PenToken",
+        "name": "_pen",
         "type": "address"
       }
     ],
@@ -242,10 +242,10 @@
   },
   {
     "inputs": [],
-    "name": "cake",
+    "name": "pen",
     "outputs": [
       {
-        "internalType": "contract CakeToken",
+        "internalType": "contract PenToken",
         "name": "",
         "type": "address"
       }

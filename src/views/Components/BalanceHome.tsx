@@ -3,19 +3,19 @@ import BigNumber from 'bignumber.js/bignumber'
 import useI18n from 'hooks/useI18n'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
-import { getCakeAddress } from 'utils/addressHelpers'
-import { useFarms, usePriceCakeBusd } from 'state/hooks'
+import { getPenAddress } from 'utils/addressHelpers'
+import { useFarms, usePricePenBusd } from 'state/hooks'
 import CardValue from '../Home/components/CardValue'
 
 const BalanceHome: React.FC = () => {
     const TranslateString = useI18n()
     const totalSupply = useTotalSupply()
-    const burnedBalance = useBurnedBalance(getCakeAddress())
+    const burnedBalance = useBurnedBalance(getPenAddress())
     const farms = useFarms();
-    const eggPrice = usePriceCakeBusd();
+    const penPrice = usePricePenBusd();
     const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
-    const cakeSupply = getBalanceNumber(circSupply);
-    const marketCap = eggPrice.times(circSupply);
+    const penSupply = getBalanceNumber(circSupply);
+    const marketCap = penPrice.times(circSupply);
   
     return (
         <div className="card">
@@ -23,7 +23,7 @@ const BalanceHome: React.FC = () => {
                 Max Supply
             </div>
             <div className="desc">
-                <CardValue fontSize="28px" value={cakeSupply} prefix="$" decimals={0}/>
+                <CardValue fontSize="28px" value={penSupply} prefix="$" decimals={0}/>
             </div>
         </div>
     )

@@ -70,7 +70,7 @@ const IfoCard: React.FC<IfoCardProps> = ({ ifo }) => {
     launchTime,
     saleAmount,
     raiseAmount,
-    cakeToBurn,
+    penToBurn,
     projectSiteUrl,
     currency,
     currencyAddress,
@@ -169,7 +169,7 @@ const IfoCard: React.FC<IfoCardProps> = ({ ifo }) => {
           launchTime={launchTime}
           saleAmount={saleAmount}
           raiseAmount={raiseAmount}
-          cakeToBurn={cakeToBurn}
+          penToBurn={penToBurn}
           projectSiteUrl={projectSiteUrl}
           raisingAmount={state.raisingAmount}
           totalAmount={state.totalAmount}

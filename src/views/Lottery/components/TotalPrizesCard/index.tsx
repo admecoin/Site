@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { Heading, Card, CardBody, CardFooter, Text, PancakeRoundIcon, Flex, Skeleton } from '@pancakeswap-libs/uikit'
 import { getBalanceNumber } from 'utils/formatBalance'
-import useI18n from 'hooks/useI18n'
+import useI18n from 'hooks/useI18n' 
 import { useTotalRewards } from 'hooks/useTickets'
 import PastLotteryDataContext from 'contexts/PastLotteryDataContext'
 import ExpandableSectionButton from 'components/ExpandableSectionButton/ExpandableSectionButton'
@@ -72,13 +72,13 @@ const TotalPrizesCard = () => {
         <CardHeading>
           <Left>
             <IconWrapper>
-              <PancakeRoundIcon />
+              <PancakeRoundIcon /> 
             </IconWrapper>
             <PrizeCountWrapper>
               <Text fontSize="14px" color="textSubtle">
                 {TranslateString(999, 'Total Pot:')}
               </Text>
-              <Heading size="lg">{lotteryPrizeWithCommaSeparators} CAKE</Heading>
+              <Heading size="lg">{lotteryPrizeWithCommaSeparators} PEN</Heading>
             </PrizeCountWrapper>
           </Left>
           <Right>

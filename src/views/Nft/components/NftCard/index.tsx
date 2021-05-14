@@ -17,7 +17,7 @@ import { Nft } from 'config/constants/types'
 import InfoRow from '../InfoRow'
 import Image from '../Image'
 import { NftProviderContext } from '../../contexts/NftProvider'
-import { getPancakeRabbitContract } from '../../utils/contracts'
+import { getPolyearnRabbitContract } from '../../utils/contracts'
 import ClaimNftModal from '../ClaimNftModal'
 import BurnNftModal from '../BurnNftModal'
 import TransferNftModal from '../TransferNftModal'
@@ -79,7 +79,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
   const fetchDetails = useCallback(async () => {
     setState((prevState) => ({ ...prevState, isLoading: true }))
     try {
-      const { methods } = getPancakeRabbitContract()
+      const { methods } = getPolyearnRabbitContract()
       const bunnyCount = await methods.bunnyCount(bunnyId).call()
       const bunnyBurnCount = await methods.bunnyBurnCount(bunnyId).call()
 
@@ -149,7 +149,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
         )}
         {isInitialized && canBurnNft && walletOwnsNft && (
           <Button variant="danger" fullWidth onClick={onPresentBurnModal} mt="24px">
-            {TranslateString(999, 'Trade in for CAKE')}
+            {TranslateString(999, 'Trade in for PEN')}
           </Button>
         )}
       </CardBody>
@@ -164,7 +164,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
             </Text>
             <InfoRow>
               <Text>{TranslateString(999, 'Value if traded in')}:</Text>
-              <Value>10 CAKE</Value>
+              <Value>10 PEN</Value>
             </InfoRow>
             <InfoRow>
               <Text>{TranslateString(999, 'Number minted')}:</Text>

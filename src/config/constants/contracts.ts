@@ -1,5 +1,5 @@
 export default {
-  cake: {
+  pen: {
     56: '0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
     97: '',
   },

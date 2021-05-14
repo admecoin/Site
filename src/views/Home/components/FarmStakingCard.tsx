@@ -7,11 +7,11 @@ import useI18n from 'hooks/useI18n'
 import { useAllHarvest } from 'hooks/useHarvest'
 import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import UnlockButton from 'components/UnlockButton'
-import CakeHarvestBalance from './CakeHarvestBalance'
-import CakeWalletBalance from './CakeWalletBalance'
-import { usePriceCakeBusd } from '../../../state/hooks'
+import PenHarvestBalance from './CakeHarvestBalance'
+import PenWalletBalance from './CakeWalletBalance'
+import { usePricePenBusd } from '../../../state/hooks'
 import useTokenBalance from '../../../hooks/useTokenBalance'
-import { getCakeAddress } from '../../../utils/addressHelpers'
+import { getPenAddress } from '../../../utils/addressHelpers'
 import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
 
@@ -44,8 +44,8 @@ const FarmedStakingCard = () => {
   const { account } = useWallet()
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
-  const cakeBalance = getBalanceNumber(useTokenBalance(getCakeAddress()))
-  const eggPrice = usePriceCakeBusd().toNumber()
+  const penBalance = getBalanceNumber(useTokenBalance(getPenAddress()))
+  const penPrice = usePricePenBusd().toNumber()
   const allEarnings = useAllEarnings()
   const earningsSum = allEarnings.reduce((accum, earning) => {
     return accum + new BigNumber(earning).div(new BigNumber(10).pow(18)).toNumber()
@@ -71,16 +71,16 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <CardImage src="/images/egg/2.png" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/egg/2.png" alt="pen logo" width={64} height={64} />
         <Block>
           <Label>{TranslateString(544, 'PEN to Harvest')}</Label>
-          <CakeHarvestBalance earningsSum={earningsSum}/>
-          <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
+          <PenHarvestBalance earningsSum={earningsSum}/>
+          <Label>~${(penPrice * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>
           <Label>{TranslateString(546, 'PEN in Wallet')}</Label>
-          <CakeWalletBalance cakeBalance={cakeBalance} />
-          <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
+          <PenWalletBalance penBalance={penBalance} />
+          <Label>~${(penPrice * penBalance).toFixed(2)}</Label>
         </Block>
         <Actions>
           {account ? (
