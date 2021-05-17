@@ -155,7 +155,7 @@
       float: right;     
 
       position: relative;
-      top: 12px;
+      top: 30px;
       right: 0;
    }
 
@@ -392,6 +392,20 @@
    }
    .service{
       width: 70%;
+   }
+   .opaquetexto{
+      margin-top: 30px !important;
+
+   }
+   .opaquelogo{
+      top: 23px !important;
+   }
+   .opaque{
+      top: 4px !important;
+   }
+
+   .topnav{
+      top: -49px !important;
    }
    
    .jivjtN{
