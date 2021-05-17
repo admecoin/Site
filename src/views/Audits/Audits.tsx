@@ -69,9 +69,6 @@ const Audits: React.FC = () => {
 
   return (
     <div>
-      <video id="videoBG" poster="" autoPlay muted loop>
-        <source src="/images/back3.mp4" type="video/mp4"/>
-      </video>
       <Page className="home">
         <Hero>
           <Heading as="h1" size="xl" mb="24px" color="secondary">
