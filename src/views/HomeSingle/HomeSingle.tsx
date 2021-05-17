@@ -79,7 +79,7 @@ const HomeSingle: React.FC = () => {
 
   return ( 
     <div className="homesingle">
-      <div id="twitter-ann" className="ann-hide">
+       {/* <div id="twitter-ann" className="ann-hide">
         <img className="twitter-icon" src="/images/tw.png" alt="Announcements" width="50px" height="50px" />
         <div>
                 <TwitterTimelineEmbed
@@ -88,10 +88,8 @@ const HomeSingle: React.FC = () => {
                             options={{height: 640}}
                             />
             </div>
-      </div>
-      <video id="videoBG" poster="" autoPlay muted loop>
-        <source src="/images/back3.mp4" type="video/mp4"/>
-      </video>
+      </div>  */}
+      
       <Page className="home">
         <Hero>
           <Heading as="h1" size="xl" mb="24px" color="secondary">
@@ -101,7 +99,6 @@ const HomeSingle: React.FC = () => {
         </Hero>
       </Page>
       <div className="info">
-        <Prices />
         
         <CardTVL />
         <CardPrice />

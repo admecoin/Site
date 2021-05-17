@@ -101,11 +101,10 @@
    -------------------------------------------------------------------- */
    #nav-wrap {
       font: 12px 'opensans-bold', sans-serif;
-      background: rgb(0,0,0,1) !important;
       letter-spacing: 1.5px;  
       width: auto;
       position: fixed;
-      top: 0;
+      top: 10px;
       right: 0;
       height: 64px;
    }
@@ -125,6 +124,9 @@
       position: relative;
       top: 22px;
       right: 0px;
+   }
+   .ccc-widget{
+      position: fixed !important;
    }
 
 	#nav-wrap > a:before,
@@ -395,6 +397,9 @@
    .jivjtN{
       right: 40px !important;
       top: -53px !important;
+   }
+   .stylednav{
+      right: 40px !important;
    }
 }
 
