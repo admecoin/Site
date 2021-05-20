@@ -7,7 +7,7 @@ import { useFetchPublicData } from 'state/hooks'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import PageLoader from './components/PageLoader'
-import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
+// import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
 import Header from './views/Components/Header'
 import Footer from './views/Components/Footer'
 import Vision from './views/Vision'
@@ -90,7 +90,7 @@ const App: React.FC = () => {
             </Switch>
           </Suspense>
       
-        <NftGlobalNotification />
+        {/* <NftGlobalNotification /> */}
       </Router>
       <div>
         <Footer />
