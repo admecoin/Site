@@ -32,9 +32,9 @@ const PenStats = () => {
   const penSupply = getBalanceNumber(circSupply);
   const marketCap = penPrice.times(circSupply);
 
-  let eggPerBlock = 0;
-  if(farms && farms[0] && farms[0].eggPerBlock){
-    eggPerBlock = new BigNumber(farms[0].eggPerBlock).div(new BigNumber(10).pow(18)).toNumber();
+  let tokensPerBlock = 0;
+  if(farms && farms[0] && farms[0].tokensPerBlock){
+    tokensPerBlock = new BigNumber(farms[0].tokensPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
   return (
@@ -61,7 +61,7 @@ const PenStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New PEN/block')}</Text>
-          <Text bold fontSize="14px">{eggPerBlock}</Text>
+          <Text bold fontSize="14px">{tokensPerBlock}</Text>
         </Row>
       </CardBody>
     </StyledPenStats>

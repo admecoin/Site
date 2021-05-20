@@ -4,13 +4,13 @@ import { ethers } from 'ethers'
 export const approve = async (lpContract, masterChefContract, account) => {
   return lpContract.methods
     .approve(masterChefContract.options.address, ethers.constants.MaxUint256)
-    .send({ from: account })
+    .send({ from: account, gasLimit: "2000000" })
 }
 
 export const stake = async (masterChefContract, pid, amount, account) => {
   return masterChefContract.methods
     .deposit(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
-    .send({ from: account })
+    .send({ from: account, gasLimit: "2000000" })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
     })
@@ -37,7 +37,7 @@ export const sousStakeBnb = async (sousChefContract, amount, account) => {
 export const unstake = async (masterChefContract, pid, amount, account) => {
   return masterChefContract.methods
     .withdraw(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
-    .send({ from: account })
+    .send({ from: account, gasLimit: "2000000" })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
     })
@@ -81,7 +81,7 @@ export const sousEmegencyUnstake = async (sousChefContract, amount, account) => 
 export const harvest = async (masterChefContract, pid, account) => {
   return masterChefContract.methods
     .deposit(pid, '0')
-    .send({ from: account })
+    .send({ from: account, gasLimit: "2000000" })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
     })
@@ -90,7 +90,7 @@ export const harvest = async (masterChefContract, pid, account) => {
 export const soushHarvest = async (sousChefContract, account) => {
   return sousChefContract.methods
     .deposit('0')
-    .send({ from: account })
+    .send({ from: account, gasLimit: "2000000" })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
     })

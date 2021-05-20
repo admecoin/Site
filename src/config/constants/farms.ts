@@ -5,15 +5,14 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'EARN',
+    lpSymbol: 'PEN',
+    isTokenOnly: true,
     lpAddresses: {
-      97: '',
-      137: '0xb0d11ed9e814c0b1cd7b605fe5cbf35e48b12cc9',
+      137: '0xb0d11ed9e814c0b1cd7b605fe5cbf35e48b12cc9'
     },
-    tokenSymbol: 'EARN',
+    tokenSymbol: 'PEN',
     tokenAddresses: {
-      97: '',
-      137: '0xb0d11ed9e814c0b1cd7b605fe5cbf35e48b12cc9',
+      137: '0xb0d11ed9e814c0b1cd7b605fe5cbf35e48b12cc9'
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -23,13 +22,11 @@ const farms: FarmConfig[] = [
     risk: 5,
     lpSymbol: 'USDC-WMATIC',
     lpAddresses: {
-      97: '',
-      137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827',
+      137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827'
     },
     tokenSymbol: 'WMATIC',
     tokenAddresses: {
-      97: '',
-      137: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
+      137: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270'
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -37,15 +34,14 @@ const farms: FarmConfig[] = [
   {
     pid: 2,
     risk: 5,
-    lpSymbol: 'EARN-USDC',
+    lpSymbol: 'PEN-USDC',
+    isTokenOnly: true,
     lpAddresses: {
-      97: '',
-      137: '0x4c7b992fb450419fc0fdc95636137b0179b5c769',
+      137: '0x4c7b992fb450419fc0fdc95636137b0179b5c769'
     },
-    tokenSymbol: 'EARN',
+    tokenSymbol: 'PEN',
     tokenAddresses: {
-      97: '',
-      137: '0xB0D11Ed9E814C0b1CD7b605Fe5CBF35e48B12CC9',
+      137: '0xB0D11Ed9E814C0b1CD7b605Fe5CBF35e48B12CC9'
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
