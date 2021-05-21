@@ -206,6 +206,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         blocksUntilStart={blocksUntilStart}
         poolCategory={poolCategory}
       />
+      {console.log(totalStaked)}
     </Card>
   )
 }
