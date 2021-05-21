@@ -92,9 +92,6 @@ const App: React.FC = () => {
       
         {/* <NftGlobalNotification /> */}
       </Router>
-      <div>
-        <Footer />
-      </div>
     </div>
   )
 }

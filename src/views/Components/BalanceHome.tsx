@@ -20,10 +20,10 @@ const BalanceHome: React.FC = () => {
     return (
         <div className="card">
             <div className="title">
-                Max Supply
+                Total Minted
             </div>
             <div className="desc">
-                <CardValue fontSize="28px" value={penSupply} prefix="" decimals={0}/>
+                <CardValue fontSize="28px" value={getBalanceNumber(totalSupply)} prefix="" decimals={2}/>
             </div>
         </div>
     )

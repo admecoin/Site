@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       <header>
 
         <img className="logo-header" src="/images/PEN_383.png" alt="" />
-        <div className="title-logo">PolyEarn</div>
+        <div className="title-logo"><a href="/">PolyEarn</a></div>
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation

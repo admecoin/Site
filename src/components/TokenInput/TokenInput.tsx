@@ -25,7 +25,7 @@ const TokenInput: React.FC<TokenInputProps> = ({ max, symbol, onChange, onSelect
             <StyledTokenSymbol>{symbol}</StyledTokenSymbol>
             <StyledSpacer />
             <div>
-              <Button size="sm" onClick={onSelectMax}>
+              <Button color="#161e27" size="sm" onClick={onSelectMax}>
                 {TranslateString(452, 'Max')}
               </Button>
             </div>
@@ -57,11 +57,12 @@ const StyledSpacer = styled.div`
 const StyledTokenAdornmentWrapper = styled.div`
   align-items: center;
   display: flex;
+  color: #161e27;
 `
 
 const StyledMaxText = styled.div`
   align-items: center;
-  color: ${(props) => props.theme.colors.primary};
+  color: #161e27;
   display: flex;
   font-size: 14px;
   font-weight: 700;
@@ -70,7 +71,7 @@ const StyledMaxText = styled.div`
 `
 
 const StyledTokenSymbol = styled.span`
-  color: ${(props) => props.theme.colors.primary};
+  color: #161e27;
   font-weight: 700;
 `
 

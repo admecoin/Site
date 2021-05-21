@@ -61,7 +61,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         const penRewardPerYear = penRewardPerBlock.times(BLOCKS_PER_YEAR)
 
         let apy = penPrice.times(penRewardPerYear);
-
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0);
 
         if (farm.quoteTokenSymbol === QuoteToken.BNB) {

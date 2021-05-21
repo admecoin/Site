@@ -22,7 +22,11 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; overflow-x: hidden;}
+body { 
+   background: #0f0f0f; 
+   overflow-x: hidden;
+   height: auto;
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -993,7 +997,6 @@ footer {
    color: #303030;
    font-size: 14px;
    text-align: center;
-   position: relative;
 }
 
 footer a, footer a:visited { color: #525252; }
@@ -1214,6 +1217,9 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
     margin-top: 20px;
     padding: 0px 80px;
     background-color: #161e27;
+    bottom: 0;    
+    position: relative;
+    width: 100%;
 }
 
 .footer .section1 div{
@@ -1427,4 +1433,9 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
 }  
 .topnav{
    top: -62px !important;
+}
+.icon-border-none
+{
+   border:none !important;
+   margin-top: 18px;
 }

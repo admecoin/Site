@@ -113,7 +113,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, penPrice, bnbPrice, 
     }
     return farm.lpTotalInQuoteToken
   }, [bnbPrice, penPrice, farm.lpTotalInQuoteToken, farm.quoteTokenSymbol])
-
   const totalValueFormated = totalValue
     ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
     : '-'
@@ -180,9 +179,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, penPrice, bnbPrice, 
           isTokenOnly={farm.isTokenOnly}
           bscScanAddress={
             farm.isTokenOnly ?
-              `https://bscscan.com/token/${farm.tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              `https://explorer-mainnet.maticvigil.com/address/${farm.tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
               :
-              `https://bscscan.com/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              `https://explorer-mainnet.maticvigil.com/address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
           }
           totalValueFormated={totalValueFormated}
           lpLabel={lpLabel}

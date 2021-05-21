@@ -8,7 +8,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'PEN',
     isTokenOnly: true,
     lpAddresses: {
-      137: '0xb0d11ed9e814c0b1cd7b605fe5cbf35e48b12cc9'
+      137: '0x4c7b992fb450419fc0fdc95636137b0179b5c769'
     },
     tokenSymbol: 'PEN',
     tokenAddresses: {
