@@ -23,7 +23,7 @@ const BalanceHome: React.FC = () => {
                 Max Supply
             </div>
             <div className="desc">
-                <CardValue fontSize="28px" value={penSupply} prefix="$" decimals={0}/>
+                <CardValue fontSize="28px" value={penSupply} prefix="" decimals={0}/>
             </div>
         </div>
     )

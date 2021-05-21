@@ -17,7 +17,7 @@ const TotalBurned: React.FC = () => {
             Total Burned
             </div>
             <div className="desc">
-                <CardValue fontSize="28px" value={getBalanceNumber(burnedBalance)} prefix="$" decimals={0}/>
+                <CardValue fontSize="28px" value={getBalanceNumber(burnedBalance)} prefix="" decimals={0}/>
             </div>
         </div>
     )

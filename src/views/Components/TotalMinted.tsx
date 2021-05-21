@@ -16,7 +16,7 @@ const TotalMinted: React.FC = () => {
             Total Minted
             </div>
             <div className="desc">
-                <CardValue fontSize="28px" value={getBalanceNumber(totalSupply)} prefix="$" decimals={0}/>
+                <CardValue fontSize="28px" value={getBalanceNumber(totalSupply)} prefix="" decimals={0}/>
             </div>
         </div>
     )

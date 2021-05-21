@@ -21,6 +21,7 @@ const farms: FarmConfig[] = [
     pid: 1,
     risk: 5,
     lpSymbol: 'USDC-WMATIC',
+    isTokenOnly: false,
     lpAddresses: {
       137: '0x6e7a5fafcec6bb1e78bae2a1f0b612012bf14827'
     },
@@ -35,7 +36,7 @@ const farms: FarmConfig[] = [
     pid: 2,
     risk: 5,
     lpSymbol: 'PEN-USDC',
-    isTokenOnly: true,
+    isTokenOnly: false,
     lpAddresses: {
       137: '0x4c7b992fb450419fc0fdc95636137b0179b5c769'
     },
