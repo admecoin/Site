@@ -98,7 +98,20 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         }
       </Heading>
       <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback PEN')}
+      {
+          tokenMode ?
+            TranslateString(11000, 'The pools have a fee of 4%, where 2% is burned and the other 2% will be used for reinvestment in the project.')
+            :
+          TranslateString(11001, 'PEN/USDC farming has a 1% fee that will be burned')
+        }
+      </Heading>
+      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+      {
+          tokenMode ?
+            TranslateString(11000, 'The PEN pool will have a 1% fee that will be burned.')
+            :
+          ''
+        }
       </Heading>
       {/* <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/> */}
       <div>

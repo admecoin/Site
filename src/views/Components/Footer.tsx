@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
                         <strong>PolyEarn Finance</strong>
                         <ul className="jss37752">
                             <li className="jss37753"><a href="/vision">Vision & Mission</a></li>
-                            <li className="jss37753"><a href="/docs">Documentation</a></li>
+                            <li className="jss37753"><a href="https://polyearn.gitbook.io/polyearn/" target="_blank">Documentation</a></li>
                             <li className="jss37753"><a href="mailto:info@polyearn.com" target="_blank" rel="noopener noreferrer">Contact us</a></li>
                         </ul>
                     </div>
