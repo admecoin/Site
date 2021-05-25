@@ -116,7 +116,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, penPrice, bnbPrice, 
   const totalValueFormated = totalValue
     ? `$${Number(totalValue).toLocaleString(undefined, { maximumFractionDigits: 0 })}`
     : '-'
-    console.log(totalValue)
   const lpLabel = farm.lpSymbol
   const earnLabel = 'PEN'
   const farmAPY = farm.apy && farm.apy.times(new BigNumber(100)).toNumber().toLocaleString(undefined, {
