@@ -1323,7 +1323,7 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
 
 }
 .plantext{
-   padding: 0px 50px;
+    padding: 0px 50px 200px;
     line-height: 2.1em;
     font-size: 1.2em;
     color: #fff;
