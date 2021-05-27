@@ -1439,3 +1439,82 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
    border:none !important;
    margin-top: 18px;
 }
+
+
+/* floating social media */
+   .telegram-flotante {
+      position: fixed;
+      bottom: 30px;
+      left: 15px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      background:#0088CC; 
+      color: white !important;
+      z-index: 9999;
+  }
+  .twitter-flotante {
+   position: fixed;
+   bottom: 80px;
+   left: 15px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   background:#00acee; 
+   color: white !important;
+   z-index: 9999;
+}
+.reddit-flotante {
+   position: fixed;
+   bottom: 130px;
+   left: 15px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   background:#FF5700; 
+   color: white !important;
+   z-index: 9999;
+}
+
+.github-flotante {
+   position: fixed;
+   bottom: 180px;
+   left: 15px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   background:#171515; 
+   color: white !important;
+   z-index: 9999;
+}
+.medium-flotante {
+   position: fixed;
+   bottom: 230px;
+   left: 15px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   background:#66cdaa; 
+   color: white !important;
+   z-index: 9999;
+}
