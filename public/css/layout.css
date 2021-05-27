@@ -1458,7 +1458,7 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
       font-size: 20px;
       background:#0088CC; 
       color: white !important;
-      z-index: 9999;
+      z-index: 1;
   }
   .twitter-flotante {
    position: fixed;
@@ -1473,7 +1473,7 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
    font-size: 20px;
    background:#00acee; 
    color: white !important;
-   z-index: 9999;
+   z-index: 1;
 }
 .reddit-flotante {
    position: fixed;
@@ -1488,7 +1488,7 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
    font-size: 20px;
    background:#FF5700; 
    color: white !important;
-   z-index: 9999;
+   z-index: 1;
 }
 
 .github-flotante {
@@ -1504,7 +1504,7 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
    font-size: 20px;
    background:#171515; 
    color: white !important;
-   z-index: 9999;
+   z-index: 1;
 }
 .medium-flotante {
    position: fixed;
@@ -1519,7 +1519,7 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
    font-size: 20px;
    background:#66cdaa; 
    color: white !important;
-   z-index: 9999;
+   z-index: 1;
 }
 .chart-flotante {
    position: fixed;
@@ -1534,7 +1534,7 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
    font-size: 20px;
    background:#D4AA2A; 
    color: white !important;
-   z-index: 9999;
+   z-index: 1;
 }
 
 .chart-flotante:hover {
