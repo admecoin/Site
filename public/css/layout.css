@@ -1533,3 +1533,22 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
    color: white !important;
    z-index: 9999;
 }
+
+.chart-flotante:hover {
+   background: #6084F9;
+}
+.medium-flotante:hover {
+   background: #6084F9;
+}
+.github-flotante:hover {
+   background: #6084F9;
+}
+.reddit-flotante:hover {
+   background: #6084F9;
+}
+.twitter-flotante:hover {
+   background: #6084F9;
+}
+.telegram-flotante:hover {
+   background: #6084F9;
+}
