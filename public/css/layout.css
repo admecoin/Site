@@ -1293,6 +1293,9 @@ box-shadow: 0px 0px 28px 3px rgba(218,187,78,1);
     background: #d4aa2a;
     color: #000!important;
 }
+.btn:hover {
+      color:rgba(0, 0, 0, 0.541) !important;
+}
 .logo-header{
    width: 38px;
    left: 15px;
